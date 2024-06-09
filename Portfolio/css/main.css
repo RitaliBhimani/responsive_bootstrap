@@ -772,13 +772,14 @@ body h2 {
     width: 70px;
     padding: 20px;
     border-radius: 50%;
+    transition: transform 1s;
 }
 
 .contact .col-lg-4 .col-lg-9 {
     margin: 10px 0px;
 }
 
-.contact .col-lg-4 .col-lg-9:hover {
+.contact .col-lg-4 .row:hover img{
     transform: translateY(-10px);
 }
 
