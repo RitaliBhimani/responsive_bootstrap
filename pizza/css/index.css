@@ -1,0 +1,340 @@
+:root {
+    --yellow: #f49f0a;
+    --green: #1e8c20;
+    --primary_color: #ffffff;
+    --grey: #c5c5c5;
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+    letter-spacing: 0.1rem;
+}
+
+.navbar .nav-item {
+    margin: 0px 10px;
+}
+
+.navbar .nav-link {
+    color: var(--primary_color);
+    position: relative;
+    font-weight: bold;
+}
+
+body .btn {
+    background-color: var(--yellow);
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: none;
+    border: 2px solid var(--yellow);
+}
+
+.btn1 {
+    background-color: var(--yellow);
+    font-weight: bold;
+}
+
+.btn1:hover {
+    background-color: none;
+    border: 2px solid var(--yellow);
+    color: white;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: var(--yellow);
+}
+
+.navbar-scrolled {
+    background-color: white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-scrolled .nav-link {
+    color: black;
+}
+
+.home {
+    background-image: url('../images/bg-1.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.home .col-md-6 {
+    margin: 18% 0% 0% 0%;
+}
+
+.home .col-md-6 h1 {
+    color: var(--primary_color);
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: 0.2rem;
+    text-shadow: 2px 6px 5px black;
+}
+
+.home .col-md-6 span {
+    color: var(--yellow);
+}
+
+.home .col-md-6 h4 {
+    color: var(--green);
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    margin: 10px 0px;
+}
+
+.home .col-md-6 p {
+    color: var(--primary_color);
+}
+
+.menu {
+    text-align: center;
+    padding: 2% 0%;
+}
+
+.menu h2 {
+    margin: 0px 0px 30px 0px;
+    color: var(--green);
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.menu .col-md-4:hover img {
+    background-color: var(--yellow);
+    border-radius: 50%;
+    border: 1px solid green;
+}
+
+.menu .col-md-4 img {
+    height: 90px;
+    padding: 0px 10px;
+}
+
+.menu .col-md-4 p {
+    font-weight: 600;
+    font-size: 14px;
+    margin: 10px 0px;
+    transition: color 1s;
+}
+
+.menu .col-md-4:hover p {
+    color: var(--yellow);
+}
+
+.about {
+    background-color: black;
+    padding: 10% 0%;
+}
+
+.about .info {
+    margin-top: 5%;
+}
+
+.about .info h3 {
+    color: var(--green);
+    margin: 10px 0px 20px 0px;
+    font-weight: 600;
+}
+
+.about .info p {
+    color: var(--grey);
+}
+
+.about .info span {
+    color: rgb(170, 170, 170);
+    font-size: 13px;
+}
+
+.food {
+    padding: 10% 0% 3% 0%;
+}
+
+.food .col-lg-8 {
+    text-align: center;
+}
+
+.food .col-lg-8 h3 {
+    color: var(--green);
+    margin: 10px 0px 20px 0px;
+    font-weight: 700;
+}
+
+.food .col-lg-8 p {
+    color: grey;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.food .card {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.food .card img {
+    transition: transform 2s;
+    border-radius: 18px 18px 0px 0px;
+}
+
+.food .card:hover img {
+    transform: scale(1.1);
+}
+
+.food .card .card-title {
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+.food .card p {
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: grey;
+    font-size: 15px;
+}
+
+.test {
+    background-color: rgb(14, 115, 61);
+    padding: 10% 0%;
+}
+
+.test .col-lg-12 {
+    text-align: center;
+    margin: 10px 0px;
+    color: white;
+    font-weight: bold;
+}
+
+.test .col-sm-10 {
+    margin: 2% auto;
+    background-color: rgb(26, 26, 26);
+    text-align: center;
+    position: relative;
+    border-radius: 20px;
+    padding: 2% 5% 3% 5%;
+}
+
+.test .col-sm-10 img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.test .carousel-indicators {
+    position: absolute;
+    bottom: -40px;
+}
+
+.test p {
+    color: rgb(164, 163, 163);
+}
+
+.footer {
+    padding: 5% 0% 0% 0%;
+    background-color: black;
+    color: white;
+}
+
+.footer img {
+    transition: all 1s;
+}
+
+.footer img:hover {
+    transform: translateY(-10px);
+}
+.footer p{
+    color: var(--grey);
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@media screen and (min-width : 768px) and (max-width : 992px) {
+    .navbar {
+        background-color: var(--primary_color);
+    }
+
+    .navbar .nav-link,
+    .nav-item {
+        color: black;
+        margin: 10px 0px;
+        text-align: center;
+    }
+
+    .navbar .navbar-toggler {
+        outline: none;
+        border: none;
+        background-color: var(--yellow);
+    }
+
+    .home .col-md-6 {
+        margin: 30% 0% 0% 0%;
+    }
+
+    .food .card .card-title {
+        font-weight: bolder;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 17px;
+        margin-top: 15px;
+    }
+
+    .food .card p {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: grey;
+        font-size: 17px;
+    }
+
+    .test .carousel-indicators {
+        position: absolute;
+        bottom: -35px;
+    }
+
+}
+
+@media screen and (min-width : 320px) and (max-width : 767px) {
+    .navbar {
+        background-color: var(--primary_color);
+    }
+
+    .navbar .nav-link,
+    .nav-item {
+        color: black;
+        margin: 10px 0px;
+        text-align: center;
+    }
+
+    .navbar .navbar-toggler {
+        outline: none;
+        border: none;
+        background-color: var(--yellow);
+    }
+
+    .home .col-md-6 {
+        margin: 50% 0% 0% 0%;
+    }
+
+    .home .col-md-6 h1 {
+        color: var(--primary_color);
+        font-weight: bold;
+        font-size: 40px;
+        letter-spacing: 0.2rem;
+        text-shadow: 2px 6px 5px black;
+    }
+
+    .home .col-md-6 h4 {
+        margin: 5px 0px;
+    }
+
+    .test .carousel-indicators {
+        position: absolute;
+        bottom: -27px;
+    }
+
+    .footer .img {
+        text-align: center;
+    }
+}
