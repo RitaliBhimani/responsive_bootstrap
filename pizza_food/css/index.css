@@ -57,6 +57,32 @@ body .btn {
 .navbar-scrolled .nav-link {
     color: black;
 }
+.navbar .navbar-brand{
+    animation: logo 1s ease-in-out forwards;
+}
+@keyframes logo {
+    0%{
+        transform: translateY(-120%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.home .col-md-6{
+    animation: home 2s ease-in-out forwards;
+}
+@keyframes home{
+    0%{
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1.1);
+        opacity: 1;
+    }
+}
 
 .home {
     background-image: url('../images/bg-1.jpg');
